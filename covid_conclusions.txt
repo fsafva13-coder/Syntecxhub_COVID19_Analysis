@@ -1,0 +1,56 @@
+
+COVID-19 DATA ANALYSIS — CONCLUSIONS
+Generated: 2026-04-01 06:13:13
+============================================================
+
+TOTAL CASES BY COUNTRY (Simulated 2020-2022)
+country
+USA        74,898,655
+India      61,115,072
+Brazil     52,477,189
+UK         44,641,252
+Germany    37,235,815
+
+PEAK DAILY CASES BY COUNTRY
+country
+USA        522,535
+UK         403,697
+India      372,134
+Brazil     336,122
+Germany    249,817
+
+KEY CONCLUSIONS
+============================================================
+
+1. FOUR DISTINCT WAVES IDENTIFIED
+   All countries experienced 4 major waves — mid 2020, late 2020,
+   mid 2021, and the Omicron wave in late 2021.
+   The Omicron wave produced the highest single-day peaks across all countries.
+
+2. ROLLING AVERAGES ESSENTIAL FOR TREND ANALYSIS
+   Raw daily case data is highly noisy due to weekend reporting delays.
+   The 7-day rolling average consistently reveals the true trend
+   and is the standard used by epidemiologists worldwide.
+
+3. COUNTRY TIMING DIFFERENCES REVEAL POLICY IMPACT
+   Different countries experienced peak timing differently.
+   Countries with earlier, stricter lockdowns showed earlier wave peaks
+   and faster declines — visible in the rolling average comparison chart.
+
+4. REPRODUCTION NUMBER DYNAMICS
+   R values spiked well above 1.0 at the start of each wave,
+   then declined as measures were imposed and immunity built.
+   The Omicron wave showed the most rapid R increase — consistent
+   with its documented higher transmissibility.
+
+5. CUMULATIVE CASES TELL A DIFFERENT STORY
+   Cumulative charts always go up — they never show improvement.
+   Daily and rolling average charts are far more useful for
+   understanding the current state of an outbreak.
+
+CHART NOTES
+- Rolling average: 7-day window used as standard epidemiological practice
+- Peak detection: scipy find_peaks with minimum 60-day gap between peaks
+- R estimation: ratio of current 7-day avg to avg 7 days prior
+- Weekly heatmap: sampled every 4 weeks for readability
+============================================================
